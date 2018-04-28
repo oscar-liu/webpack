@@ -41,3 +41,11 @@ webpack-dev-middleware 是一个容器(wrapper)，它可以把 webpack 处理后
 首先，安装 express 和 webpack-dev-middleware：
 
     npm install --save-dev express webpack-dev-middleware
+
+
+## 模块热替换
+
+模块热替换(Hot Module Replacement 或 HMR)是 webpack 提供的最有用的功能之一。它允许在运行时更新各种模块，而无需进行完全刷新。
+
+###### 启用 HMR
+启用此功能实际上相当简单。而我们要做的，就是更新 webpack-dev-server 的配置，和使用 webpack 内置的 HMR 插件。
