@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Output Management</title>
+  </head>
+  <body>
+      <div id="app">
+        <% for(var key in htmlWebpackPlugin.files) { %>
+            <%= key %> : <%= JSON.stringify(htmlWebpackPlugin.files[key]) %>    //将对象或数组转换为JSON字符串。
+        <% } %>
+        
+        <% for(var key in htmlWebpackPlugin.options) { %>
+            <%= key %> : <%= JSON.stringify(htmlWebpackPlugin.options[key]) %>  
+        <% } %>
+      </div>
+      
+  </body>
+</html>
